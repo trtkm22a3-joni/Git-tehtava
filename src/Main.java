@@ -10,3 +10,14 @@ public class Main {
 	}
 
 } // Main luokan lopetus
+
+class Auto {
+	
+	public String merkki;
+	public String malli;
+	public double bensanMaara;
+	
+	
+	
+	
+}
