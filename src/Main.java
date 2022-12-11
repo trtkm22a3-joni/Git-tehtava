@@ -12,6 +12,11 @@ public class Main {
 		auto1.jarruta();
 		auto1.naytaTiedot();
 		auto1.tankkaa(50);
+		
+		Auto auto2 = new Auto("Volvo", "S80", 70);
+		auto2.naytaTiedot();
+		auto2.kiihdyta();
+		auto2.naytaTiedot();
 
 	}
 
@@ -23,6 +28,25 @@ class Auto {
 	public String merkki;
 	public String malli;
 	public int bensanMaara;
+	
+	//Luodaan oletusmuodostin
+	public Auto() {
+		
+		merkki = "";
+		malli = "";
+		bensanMaara = 0;
+		
+	}
+	//Luodaan parametrinen muodostin
+	public Auto(String merkki, String malli, int bensanMaara) {
+		
+		System.out.println("\n");
+		this.merkki = merkki;
+		this.malli = malli;
+		this.bensanMaara = bensanMaara;
+		
+		
+	}
 
 	//Määritellään metodit
 	public void jarruta() {
