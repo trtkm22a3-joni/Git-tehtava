@@ -6,12 +6,12 @@ public class Main {
 		Auto auto1 = new Auto();
 		auto1.merkki = "Lincoln";
 		auto1.malli = "Town Car";
-		auto1.bensanMaara = 60;
+		auto1.bensanMaara = 10;
 		auto1.naytaTiedot();
 		auto1.kiihdyta();
 		auto1.jarruta();
 		auto1.naytaTiedot();
-		auto1.tankkaa(10);
+		auto1.tankkaa(50);
 
 	}
 
@@ -40,7 +40,7 @@ class Auto {
 		} else {
 
 			System.out.println("Auto kiihtyy\n");
-			bensanMaara--;
+			bensanMaara--; //vähennetään polttoaineen määrää yhdellä litralla
 		}
 	}
 
